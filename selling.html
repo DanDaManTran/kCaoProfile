@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kimmy Cao</title>
+	<!-- CSS reset bootstrap assets awesome icon-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- jquery firebase moment asset -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<nav class="navbar-inverse navbar-fixed-top">
+		<div class="container container-fluid">
+			<ul class="navbar-left">
+				<li><a class="logo" href="index.html">Kimmy Cao</a></li>
+			</ul>
+
+		    <ul class="navbar-right">
+		    	<li><a class="shortCuts" href="index.html">Bio</a></li> 
+
+		    	<li><a style="color: #AA1111" class="shortCuts" href="selling.html">Seller</a></li>
+
+		    	<li><a class="shortCuts" href="buyer.html">Buyer</a></li> 
+
+				<li><a class="shortCuts" href="rating.html">Blog</a></li> 
+
+				<li><a class="shortCuts" href="contact.html">Contact</a></li> 
+		    </ul>
+		</div>
+	</nav>
+	
+	<div class="container" id="pageSell">
+		<form class="form-horizontal" action=" " method="post"  id="contact_form">
+			<div class="form-group">
+  				<label class="col-md-4 control-label">First Name</label>  
+				
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+						<input  id="sellFirstName" placeholder="First Name" class="form-control"  type="text">
+					</div>
+				</div>
+			</div>	
+
+			<div class="form-group">
+  				<label class="col-md-4 control-label">Last Name</label>
+
+    			<div class="col-md-4 inputGroupContainer">
+    				<div class="input-group">
+  						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+  						<input id="sellLastName" placeholder="Last Name" class="form-control"  type="text">
+    				</div>
+  				</div>
+			</div>
+
+			<div class="form-group">
+  				<label class="col-md-4 control-label">E-Mail</label>  
+
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+    					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+
+						<input id="sellEmail" placeholder="E-Mail Address" class="form-control"  type="text">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+  				<label class="col-md-4 control-label">Phone #</label>  
+    			<div class="col-md-4 inputGroupContainer">
+    				<div class="input-group">
+				        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+
+						<input id="sellPhone" placeholder="xxx-xxx-xxxx" class="form-control" type="text">
+				    </div>
+				</div>
+			</div>
+
+			<div class="form-group">
+  				<label class="col-md-4 control-label">Address</label>  
+    			<div class="col-md-4 inputGroupContainer">
+    				<div class="input-group">
+        				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+
+  						<input id="sellAddress" placeholder="Address" class="form-control" type="text">
+    				</div>
+  				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 control-label">City</label>  
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+
+						<input id="sellCity" placeholder="city" class="form-control"  type="text">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 control-label">Zip Code</label>  
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+        				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+
+						<input id="sellZip" placeholder="Zip Code" class="form-control"  type="text">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 control-label">Project Description</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+
+						<textarea class="form-control" id="sellComment" placeholder="Project Description"></textarea>
+					</div>
+				</div>
+			</div>
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label"></label>
+				<div class="col-md-4">
+					<button type="button" id="sellBtn" class="btn">Send <span class="glyphicon glyphicon-send"></span></button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

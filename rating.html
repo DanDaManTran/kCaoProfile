@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kimmy Cao</title>
+	<!-- CSS reset bootstrap assets awesome icon-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<!-- jquery firebase moment asset -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<nav class="navbar-inverse navbar-fixed-top">
+		<div class="container container-fluid">
+			<ul class="navbar-left">
+				<li><a class="logo" href="index.html">Kimmy Cao</a></li>
+			</ul>
+
+		    <ul class="navbar-right">
+		    	<li><a class="shortCuts" href="index.html">Bio</a></li> 
+
+		    	<li><a class="shortCuts" href="selling.html">Seller</a></li>
+
+		    	<li><a class="shortCuts" href="buyer.html">Buyer</a></li> 
+
+				<li><a style="color: #AA1111" class="shortCuts" href="rating.html">Blog</a></li> 
+
+				<li><a class="shortCuts" href="contact.html">Contact</a></li> 
+		    </ul>
+		</div>
+	</nav>
+	
+	<div class="container container-fluid" id="pageBlog">		
+		<div class="blog">
+			<div class="col-sm-6">
+				<form>
+					<div class="row rowName">
+						<h3 class="formTitle formName">Name: <input id="inputName" placeholder="Name"></h3>
+
+					</div>
+
+					<div class="row rowRate">
+						<h3 class="formRateTitle">
+							<span id="rateTitle">Rating: </span>
+
+							<div class="rating">
+								<i class="star fa fa-star-o" data-value="1"></i>
+								<i class="star fa fa-star-o" data-value="2"></i>
+								<i class="star fa fa-star-o" data-value="3"></i>
+								<i class="star fa fa-star-o" data-value="4"></i>
+								<i class="star fa fa-star-o" data-value="5"></i>
+							</div>
+						</h3>
+
+					</div>
+					
+					<div class="row">
+						<h3 class="formTitle">Comment:</h3>
+					</div>
+
+					<div class="row rowComment">
+						<textarea id="inputComment" onkeyup="countChar(this)"></textarea>
+						
+					</div>
+
+					<div class="row">
+						<div id="charNum">Character Left: 200</div>
+
+						<button id="ratingSub" class="btn" type="button">Submit</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="row">
+					<div id="history">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
