@@ -49,6 +49,9 @@ li{
 	margin-top: 9rem;
 	color: #000000;
 }
+.name{
+	text-align: center;
+}
 
 .page-header{
 	border-color: #AA1111;
@@ -61,6 +64,25 @@ li{
 
 .contactIcon{
 	margin: 1rem;
+}
+
+.aboutMe{
+	margin-top: 5rem;
+}
+
+.picContainer{
+	width: 80%;
+	height: 40rem;
+	margin: auto;
+
+}
+
+.bioPic{
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 50px;
 }
 
 /*********************Blog***************************/
@@ -173,6 +195,7 @@ i{
 
 .warningSign{
 	color: #AA1111;
+	font-size: 1.5rem;
 }
 
 /*********************Sell***************************/
@@ -206,5 +229,26 @@ i{
 	margin-top: 12rem;
 }
 
+.buyControl{
+	margin-top: 2rem;
+}
+
+/*********************Contact***************************/
+
+#contactPage{
+	margin-top: 12rem;
+}
+
+.contactRow{
+	margin-top: 3rem;
+}
+
+#contactText{
+	height: 15rem;
+}
+
+.socialProf{
+	text-align: center;
+}
 
 

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="assets/javascript/main.min.js"></script>
 </head>
 <body>
 	<nav class="navbar-inverse navbar-fixed-top">
@@ -23,15 +23,76 @@
 
 		    	<li><a class="shortCuts" href="buyer.html">Buyer</a></li> 
 
-				<li><a class="shortCuts" href="rating.html">Blog</a></li> 
-
 				<li><a style="color: #AA1111" class="shortCuts" href="contact.html">Contact</a></li> 
 		    </ul>
 		</div>
 	</nav>
 	
-	<div class="container container-fluid" id="">		
-		
+	<div class="container container-fluid" id="contactPage">		
+		<div class="col-sm-7">
+			<div class="row contactRow">
+				<div class="col-sm-2">
+					<label class="control-label">Name<span class="warningSign">*</span></label> 
+				</div>
+				<div class="col-sm-10">
+					<div class="input-group">
+						<input  id="nameContact" placeholder="Name" class="form-control"  type="text">
+					</div> 
+				</div>
+			</div>
+
+			<div class="row contactRow">
+				<div class="col-sm-2">
+					<label class="control-label">E-mail<span class="warningSign">*</span></label> 
+				</div>
+				<div class="col-sm-10">
+					<div class="input-group">
+						<input  id="contactEmail" placeholder="E-Mail Address" class="form-control"  type="text">
+					</div> 
+				</div>
+			</div>
+
+			<div class="row contactRow">
+				<div class="col-sm-2">
+					<label class="control-label">Message<span class="warningSign">*</span></label> 
+				</div>
+
+				<div class="col-sm-10">
+					<div class="input-group">
+						<textarea id="contactText" placeholder="Text" class="form-control"  type="text"></textarea>
+					</div> 
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 control-label"></label>
+				<div class="col-md-4">
+					<button type="button" id="contactBtn" class="btn">Send <span class="glyphicon glyphicon-send"></span></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-5 socialProf">
+			<h2>My Social Profiles</h2>	
+
+			<h5>Feel free to connect with me with any of my social websites</h5>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<a target="_blank" href="https://twitter.com/KimCao206?lang=en" class="shortCuts"> <h3><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</h3></a>
+				</div>
+
+				<div class="col-sm-6">
+					<a target="_blank" href="https://www.facebook.com/kcao1" class="shortCuts"> <h3><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</h3></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<a target="_blank" href="https://www.linkedin.com/in/kcao206" class="shortCuts"> <h3><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</h3></a>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

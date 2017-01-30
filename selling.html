@@ -11,7 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 	<script type="text/javascript" src="https://momentjs.com/downloads/moment.js"></script>
-	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<script type="text/javascript" src="assets/javascript/main.min.js"></script>
 </head>
 <body>
 	<nav class="navbar-inverse navbar-fixed-top">
@@ -27,8 +27,6 @@
 
 		    	<li><a class="shortCuts" href="buyer.html">Buyer</a></li> 
 
-				<li><a class="shortCuts" href="rating.html">Blog</a></li> 
-
 				<li><a class="shortCuts" href="contact.html">Contact</a></li> 
 		    </ul>
 		</div>
@@ -37,7 +35,7 @@
 	<div class="container" id="pageSell">
 		<form class="form-horizontal" action=" " method="post"  id="contact_form">
 			<div class="form-group">
-  				<label class="col-md-4 control-label">First Name</label>  
+  				<label class="col-md-4 control-label">First Name<span class="warningSign">*</span></label>  
 				
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
@@ -49,7 +47,7 @@
 			</div>	
 
 			<div class="form-group">
-  				<label class="col-md-4 control-label">Last Name</label>
+  				<label class="col-md-4 control-label">Last Name<span class="warningSign">*</span></label>
 
     			<div class="col-md-4 inputGroupContainer">
     				<div class="input-group">
@@ -61,7 +59,7 @@
 			</div>
 
 			<div class="form-group">
-  				<label class="col-md-4 control-label">E-Mail</label>  
+  				<label class="col-md-4 control-label">E-Mail<span class="warningSign">*</span></label>  
 
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
@@ -73,7 +71,7 @@
 			</div>
 
 			<div class="form-group">
-  				<label class="col-md-4 control-label">Phone #</label>  
+  				<label class="col-md-4 control-label">Phone #<span class="warningSign">*</span></label>  
     			<div class="col-md-4 inputGroupContainer">
     				<div class="input-group">
 				        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
@@ -84,7 +82,7 @@
 			</div>
 
 			<div class="form-group">
-  				<label class="col-md-4 control-label">Address</label>  
+  				<label class="col-md-4 control-label">Address<span class="warningSign">*</span></label>  
     			<div class="col-md-4 inputGroupContainer">
     				<div class="input-group">
         				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
@@ -95,7 +93,7 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label">City</label>  
+				<label class="col-md-4 control-label">City<span class="warningSign">*</span></label>  
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
@@ -106,7 +104,7 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label">Zip Code</label>  
+				<label class="col-md-4 control-label">Zip Code<span class="warningSign">*</span></label>  
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
         				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
@@ -117,12 +115,12 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-md-4 control-label">Project Description</label>
+				<label class="col-md-4 control-label">House Description</label>
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
 
-						<textarea class="form-control" id="sellComment" placeholder="Project Description"></textarea>
+						<textarea class="form-control" id="sellComment" placeholder="House Description"></textarea>
 					</div>
 				</div>
 			</div>
