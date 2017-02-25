@@ -2,7 +2,7 @@
   "name": "kcaoprofile",
   "version": "1.0.0",
   "description": "k. cao profile",
-  "main": "index.js",
+  "main": "email.js",
   "author": "dtran",
   "license": "ISC",
   "dependencies": {
