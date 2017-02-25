@@ -25,7 +25,7 @@ function post (subject, context){
 
 	$.ajax({
 		type: 'POST', 
-		url: 'http://localhost:8080/api/contact',
+		url: 'http://localhost:5000/api/contact',
 		data: email
 	});
 };
